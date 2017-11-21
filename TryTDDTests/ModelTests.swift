@@ -1,15 +1,14 @@
 //
-//  TryTDDTests.swift
+//  ModelTests.swift
 //  TryTDDTests
 //
-//  Created by  Dada on 2017/11/15.
+//  Created by DADA on 2017/11/20.
 //  Copyright © 2017年  Dada. All rights reserved.
 //
 
 import XCTest
-@testable import TryTDD
 
-class TryTDDTests: XCTestCase {
+class ModelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,7 +20,7 @@ class TryTDDTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testOnePlusOne() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

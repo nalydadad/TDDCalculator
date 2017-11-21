@@ -12,8 +12,11 @@
 		0F2850811FBC2F370072AC2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28507F1FBC2F370072AC2C /* Main.storyboard */; };
 		0F2850831FBC2F370072AC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F2850821FBC2F370072AC2C /* Assets.xcassets */; };
 		0F2850861FBC2F370072AC2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F2850841FBC2F370072AC2C /* LaunchScreen.storyboard */; };
-		0F2850911FBC2F370072AC2C /* TryTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2850901FBC2F370072AC2C /* TryTDDTests.swift */; };
-		0F28509C1FBC2F370072AC2C /* TryTDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28509B1FBC2F370072AC2C /* TryTDDUITests.swift */; };
+		0F2850D81FBC32100072AC2C /* CalculatorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2850D71FBC32100072AC2C /* CalculatorModelTests.swift */; };
+		0F2850DA1FBC32200072AC2C /* DDCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2850D91FBC32200072AC2C /* DDCalculatorModel.swift */; };
+		0F2850DB1FBC32200072AC2C /* DDCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2850D91FBC32200072AC2C /* DDCalculatorModel.swift */; };
+		0FB925FC1FC03F9100A9632D /* TryTDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB925FB1FC03F9100A9632D /* TryTDDUITests.swift */; };
+		0FC422B61FC3079F00738FB8 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC422B51FC3079F00738FB8 /* ModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +45,13 @@
 		0F2850851FBC2F370072AC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F2850871FBC2F370072AC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F28508C1FBC2F370072AC2C /* TryTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F2850901FBC2F370072AC2C /* TryTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryTDDTests.swift; sourceTree = "<group>"; };
 		0F2850921FBC2F370072AC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F2850971FBC2F370072AC2C /* TryTDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryTDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F28509B1FBC2F370072AC2C /* TryTDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryTDDUITests.swift; sourceTree = "<group>"; };
 		0F28509D1FBC2F370072AC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2850D71FBC32100072AC2C /* CalculatorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModelTests.swift; sourceTree = "<group>"; };
+		0F2850D91FBC32200072AC2C /* DDCalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCalculatorModel.swift; sourceTree = "<group>"; };
+		0FB925FB1FC03F9100A9632D /* TryTDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryTDDUITests.swift; sourceTree = "<group>"; };
+		0FC422B51FC3079F00738FB8 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 			children = (
 				0F28507B1FBC2F370072AC2C /* AppDelegate.swift */,
 				0F28507D1FBC2F370072AC2C /* ViewController.swift */,
+				0F2850D91FBC32200072AC2C /* DDCalculatorModel.swift */,
 				0F28507F1FBC2F370072AC2C /* Main.storyboard */,
 				0F2850821FBC2F370072AC2C /* Assets.xcassets */,
 				0F2850841FBC2F370072AC2C /* LaunchScreen.storyboard */,
@@ -110,8 +116,9 @@
 		0F28508F1FBC2F370072AC2C /* TryTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				0F2850901FBC2F370072AC2C /* TryTDDTests.swift */,
+				0F2850D71FBC32100072AC2C /* CalculatorModelTests.swift */,
 				0F2850921FBC2F370072AC2C /* Info.plist */,
+				0FC422B51FC3079F00738FB8 /* ModelTests.swift */,
 			);
 			path = TryTDDTests;
 			sourceTree = "<group>";
@@ -119,8 +126,8 @@
 		0F28509A1FBC2F370072AC2C /* TryTDDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0F28509B1FBC2F370072AC2C /* TryTDDUITests.swift */,
 				0F28509D1FBC2F370072AC2C /* Info.plist */,
+				0FB925FB1FC03F9100A9632D /* TryTDDUITests.swift */,
 			);
 			path = TryTDDUITests;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 					};
 					0F2850961FBC2F370072AC2C = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0F2850771FBC2F370072AC2C;
 					};
@@ -259,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2850DA1FBC32200072AC2C /* DDCalculatorModel.swift in Sources */,
 				0F28507E1FBC2F370072AC2C /* ViewController.swift in Sources */,
 				0F28507C1FBC2F370072AC2C /* AppDelegate.swift in Sources */,
 			);
@@ -268,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F2850911FBC2F370072AC2C /* TryTDDTests.swift in Sources */,
+				0FC422B61FC3079F00738FB8 /* ModelTests.swift in Sources */,
+				0F2850DB1FBC32200072AC2C /* DDCalculatorModel.swift in Sources */,
+				0F2850D81FBC32100072AC2C /* CalculatorModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F28509C1FBC2F370072AC2C /* TryTDDUITests.swift in Sources */,
+				0FB925FC1FC03F9100A9632D /* TryTDDUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,12 +501,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2LBQQ4643;
 				INFOPLIST_FILE = TryTDDUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.TryTDDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TryTDD;
@@ -506,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2LBQQ4643;
 				INFOPLIST_FILE = TryTDDUITests/Info.plist;

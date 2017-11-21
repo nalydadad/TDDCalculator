@@ -2,7 +2,7 @@
 //  TryTDDUITests.swift
 //  TryTDDUITests
 //
-//  Created by  Dada on 2017/11/15.
+//  Created by DADA on 2017/11/18.
 //  Copyright © 2017年  Dada. All rights reserved.
 //
 
@@ -28,9 +28,9 @@ class TryTDDUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUI() {
+        XCUIApplication().launch()
     }
     
 }
+

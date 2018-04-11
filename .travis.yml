@@ -1,0 +1,11 @@
+osx_image: xcode9
+language: swfit
+
+before_install:
+  - git submodule update --init --recursive
+  - brew update || brew update
+  - brew outdated xctool || brew upgrade xctool
+
+script:
+  - rake test:ios
+  - rake test:xctool:ios

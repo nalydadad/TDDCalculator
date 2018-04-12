@@ -4,4 +4,4 @@ osx_image: xcode9.2
 
 script:
   - xcodebuild -project TryTDD.xcodeproj -scheme TryTDD -sdk iphonesimulator
-
+  - xcodebuild test -project TryTDD.xcodeproj -scheme TryTDDTests -sdk iphonesimulator

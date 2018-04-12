@@ -9,17 +9,7 @@ before_install:
 
 script:
   # - xcodebuild -project TryTDD.xcodeproj -scheme TryTDD -sdk iphonesimulator | xcpretty
-  - xcodebuild clean test 
-	-project TryTDD.xcodeproj 
-	-scheme TryTDDTests 
-	-sdk iphonesimulator 
-	-destination 'platform=iOS Simulator,name=iPhone 8,OS=11.3' 
-	-configuration Debug 
-	-enableCodeCoverage YES
-	CODE_SIGN_IDENTITY=""
-	CODE_SIGNING_REQUIRED=NO  
-	ONLY_ACTIVE_ARCH=NO
-	-quiet | xcpretty
+  - xcodebuild clean test -project TryTDD.xcodeproj -scheme TryTDDTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.3' -configuration Debug -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet | xcpretty
 
 
 after_success:

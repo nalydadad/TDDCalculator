@@ -4,8 +4,8 @@ osx_image: xcode9.3
 
 before_install:
   - xctool --version
-  - xcodebuild --versoin
-  - xcodebuild --showsdks
+  - xcodebuild -versoin
+  - xcodebuild -showsdks
   - brew install xctool
 
 script:

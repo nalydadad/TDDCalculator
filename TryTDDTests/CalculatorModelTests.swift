@@ -17,7 +17,7 @@ class CalculatorModelTests: XCTestCase {
 		let calculator = DDCalculatorModel()
 		
 		// Act
-		calculator.input(key: "1")
+		calculator.input(key: "5")
 		
 		// Assert
 		XCTAssertTrue(calculator.currentOutput == "1")

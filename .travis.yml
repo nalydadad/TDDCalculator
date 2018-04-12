@@ -3,11 +3,10 @@ language: swift
 osx_image: xcode9.3
 
 before_install:
-  - xctool --version
+  - xcpretty --version
   - xcodebuild -version
   - xcodebuild -showsdks
-  - brew install xctool
 
 script:
   - xcodebuild -project TryTDD.xcodeproj -scheme TryTDD -sdk iphonesimulator
-  - xctool run-tests -project TryTDD.xcodeproj -scheme TryTDDTests -sdk iphonesimulator
+  - xcodebuild test -project TryTDD.xcodeproj -scheme TryTDDTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.3' -configuration Debug -enableCodeCoverage YES | xcpretty
